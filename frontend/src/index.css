@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   AKASH VERMA — CYBER ARCHITECT DESIGN SYSTEM (moaarif.in aesthetic)
+========================================================= */
+
+:root {
+  --theme-accent: #00f0ff;
+  --theme-accent-dark: #0284c7;
+
+  --theme-bg: #030712;
+  --theme-bg-secondary: #050816;
+  --theme-card: #080d1a;
+
+  --theme-white: #f8fafc;
+  --theme-text: #e2e8f0;
+  --theme-muted: #94a3b8;
+  --theme-dim: #64748b;
+
+  --theme-border: rgba(255, 255, 255, 0.08);
+  --theme-border-strong: rgba(0, 240, 255, 0.4);
+
+  --theme-soft: rgba(0, 240, 255, 0.08);
+  --theme-glow: rgba(0, 240, 255, 0.35);
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--theme-bg);
+}
+
+body {
+  margin: 0;
+  background-color: var(--theme-bg);
+  color: var(--theme-white);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   KINETIC STROKE TEXT (moaarif.in signature typography)
+========================================================= */
+
+.stroke-text {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
+  color: transparent;
+  transition: -webkit-text-stroke 0.3s ease, color 0.3s ease;
+}
+
+.stroke-text:hover {
+  -webkit-text-stroke: 1.5px var(--theme-accent);
+}
+
+.stroke-text-accent {
+  -webkit-text-stroke: 1.5px var(--theme-accent);
+  color: transparent;
+}
+
+/* =========================================================
+   THEME UTILITIES
+========================================================= */
+
+.theme-accent {
+  color: var(--theme-accent);
+}
+
+.theme-accent-bg {
+  background-color: var(--theme-accent);
+}
+
+.theme-accent-soft {
+  background-color: var(--theme-soft);
+}
+
+.theme-border {
+  border-color: var(--theme-border);
+}
+
+.theme-border-strong {
+  border-color: var(--theme-border-strong);
+}
+
+.theme-glow {
+  box-shadow: 0 0 35px var(--theme-glow);
+}
+
+/* =========================================================
+   GRADIENTS & ANIMATIONS
+========================================================= */
+
+.theme-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    var(--theme-accent),
+    #ffffff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-nebula {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(45px, -35px) scale(1.08);
+  }
+  100% {
+    transform: translate(-35px, 45px) scale(0.95);
+  }
+}
+
+.animate-spin-nebula {
+  animation: spin-slow 70s linear infinite;
+}
+
+.animate-float-nebula {
+  animation: float-nebula 24s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+  background: var(--theme-accent);
+  color: #030712;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-accent);
+}
+
+/* =========================================================
+   CUSTOM CURSOR (moaarif.in mix-blend-difference style)
+========================================================= */
+@media (min-width: 1024px) {
+  body {
+    cursor: none;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [role="button"] {
+    cursor: none;
+  }
+
+  .custom-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background: var(--theme-accent);
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 12px var(--theme-accent);
+    transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+  }
+
+  .custom-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate3d(0, 0, 0);
+    mix-blend-mode: difference;
+    backdrop-filter: blur(1.5px);
+    transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  }
+
+  .custom-cursor-ring.cursor-hover {
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+  }
+
+  .custom-cursor-dot.cursor-dot-hover {
+    width: 4px;
+    height: 4px;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1023px) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none;
+  }
+}
