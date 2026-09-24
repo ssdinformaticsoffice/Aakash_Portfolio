@@ -225,7 +225,7 @@ function Hero() {
             variants={staggerContainer(0.12, 0.1)}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-7"
+            className="order-2 lg:order-1 lg:col-span-7"
           >
 
             {/* STATUS */}
@@ -305,17 +305,17 @@ function Hero() {
               className="
                 mb-8 max-w-full
                 break-words
-                text-[clamp(2.7rem,10vw,5rem)]
+                text-[clamp(2.4rem,8vw,4.2rem)]
                 font-black italic
                 leading-[0.84]
                 tracking-tighter
                 select-none
-                sm:text-[clamp(3rem,8vw,5.2rem)]
-                lg:text-[clamp(3.5rem,5.5vw,5.4rem)]
+                sm:text-[clamp(2.7rem,7vw,4.5rem)]
+                lg:text-[clamp(3.1rem,4.8vw,4.7rem)]
               "
             >
 
-              <span className="stroke-text block">
+              <span className="hero-name block">
                 AKASH VERMA
               </span>
 
@@ -323,7 +323,7 @@ function Hero() {
                 key={headlineIndex}
                 className="
                   block min-h-[1em]
-                  text-white
+                  hero-heading-fill
                 "
                 aria-live="polite"
               >
@@ -363,7 +363,7 @@ function Hero() {
                 className="
                   text-base font-medium
                   leading-relaxed
-                  text-slate-400
+                  hero-description
                   sm:text-lg
                 "
               >
@@ -371,7 +371,7 @@ function Hero() {
 
                 <span
                   className="
-                    font-bold text-white
+                    font-bold hero-emphasis
                     underline underline-offset-4
                   "
                   style={{
@@ -393,7 +393,7 @@ function Hero() {
               <div
                 className="
                   space-y-4
-                  border-l border-white/10
+                  hero-divider border-l
                   py-1 pl-6
                 "
               >
@@ -405,7 +405,7 @@ function Hero() {
                     font-bold
                     uppercase
                     tracking-widest
-                    text-slate-500
+                    hero-label
                   ">
                     Current Status
                   </span>
@@ -416,7 +416,7 @@ function Hero() {
                     font-bold
                     uppercase
                     tracking-tight
-                    text-white
+                    hero-value
                     sm:text-sm
                   ">
                     CEO @ SSD INFORMATICS
@@ -431,7 +431,7 @@ function Hero() {
                     font-bold
                     uppercase
                     tracking-widest
-                    text-slate-500
+                    hero-label
                   ">
                     Specialization
                   </span>
@@ -442,7 +442,7 @@ function Hero() {
                     font-bold
                     uppercase
                     tracking-tight
-                    text-white
+                    hero-value
                     sm:text-sm
                   ">
                     SYSTEM ARCHITECTURE & PYTHON
@@ -454,108 +454,6 @@ function Hero() {
 
             </motion.div>
 
-            {/* =================================================
-                CTA
-            ================================================= */}
-
-            <motion.div
-              variants={fadeUp}
-              className="
-                flex flex-col
-                items-start gap-6
-                sm:flex-row
-                sm:items-center
-                sm:gap-10
-              "
-            >
-
-              <motion.div
-                whileHover={{
-                  scale: 1.05,
-                }}
-                whileTap={{
-                  scale: 0.95,
-                }}
-              >
-
-                <Link
-                  to="/projects"
-                  className="
-                    group relative
-                    inline-flex
-                    items-center
-                    justify-center
-                    overflow-hidden
-                    rounded-full
-                    px-8 py-4
-                    text-xs font-bold
-                    uppercase
-                    tracking-wider
-                    text-[#030712]
-                    shadow-2xl
-                  "
-                  style={{
-                    backgroundColor:
-                      "var(--theme-accent)",
-                    boxShadow:
-                      "0 0 35px var(--theme-glow)",
-                  }}
-                >
-
-                  <span className="
-                    relative z-10
-                    flex items-center gap-2
-                  ">
-                    Explore Works
-                    <ArrowUpRight size={16} />
-                  </span>
-
-                  <div
-                    className="
-                      absolute inset-0
-                      scale-150
-                      rounded-full
-                      bg-white/30
-                      opacity-0
-                      blur-md
-                      transition-opacity
-                      duration-300
-                      group-hover:opacity-100
-                    "
-                  />
-
-                </Link>
-
-              </motion.div>
-
-              <a
-                href="#about"
-                className="
-                  group flex
-                  cursor-pointer
-                  items-center gap-4
-                  text-xs font-bold
-                  uppercase tracking-widest
-                  text-slate-400
-                "
-              >
-
-                <span
-                  className="
-                    h-px w-12
-                    transition-all
-                    duration-500
-                    group-hover:w-20
-                  "
-                  style={{
-                    backgroundColor:
-                      "var(--theme-accent)",
-                  }}
-                />
-
-              </a>
-
-            </motion.div>
 
           </motion.div>
 
@@ -563,7 +461,7 @@ function Hero() {
               RIGHT IMAGE
           ================================================= */}
 
-          <div className="relative lg:col-span-5">
+          <div className="relative order-1 lg:order-2 lg:col-span-5">
 
             <div
               ref={cardRef}
@@ -615,9 +513,9 @@ function Hero() {
                 >
 
                   <img
-  src="/images/akash-verma.png"
-  alt="Akash Verma"
-  className="
+                    src="/images/akash-verma.png"
+                    alt="Akash Verma"
+                    className="
     absolute inset-0
     h-full w-full
     scale-105
@@ -628,7 +526,7 @@ function Hero() {
     group-hover:scale-100
     group-hover:grayscale
   "
-/>
+                  />
 
                   {/* GRADIENT */}
 
@@ -641,35 +539,6 @@ function Hero() {
                     to-transparent
                     opacity-80
                   " />
-
-                  {/* TOP IDENTIFICATION */}
-
-                  <div className="
-                    pointer-events-none
-                    absolute left-6 top-6
-                    flex flex-col gap-1
-                  ">
-
-                    <span className="
-                      text-[8px]
-                      font-bold
-                      uppercase
-                      tracking-[0.3em]
-                      text-white/40
-                    ">
-                      Identification
-                    </span>
-
-                    <span className="
-                      text-[12px]
-                      font-black
-                      tracking-tighter
-                      text-white
-                    ">
-                      VERMA_01.A
-                    </span>
-
-                  </div>
 
                   {/* BOTTOM STATUS */}
 

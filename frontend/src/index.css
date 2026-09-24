@@ -15,6 +15,10 @@
   --green: #22c55e;
   --purple: #a855f7;
   --emerald: #10b981;
+  --theme-accent: #3b82f6;
+  --theme-soft: rgba(59, 130, 246, 0.1);
+  --theme-border-strong: rgba(59, 130, 246, 0.35);
+  --theme-glow: rgba(59, 130, 246, 0.35);
   --card: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.1);
   --card-border-hover: rgba(255, 255, 255, 0.2);
@@ -175,6 +179,29 @@ img {
 
 .text-soft {
   color: var(--fg-soft);
+}
+
+.hero-name {
+  color: var(--theme-accent);
+}
+
+.hero-heading-fill,
+.hero-emphasis,
+.hero-value {
+  color: var(--fg);
+}
+
+.hero-description,
+.hero-link {
+  color: var(--mut);
+}
+
+.hero-label {
+  color: var(--mut-2);
+}
+
+.hero-divider {
+  border-color: var(--line);
 }
 
 .hairline {
@@ -1694,6 +1721,10 @@ img {
   --card-border: rgba(0, 0, 0, 0.1);
   --card-border-hover: rgba(0, 0, 0, 0.22);
   --fg-soft: rgba(0, 0, 0, 0.78);
+  --theme-accent: #2563eb;
+  --theme-soft: rgba(37, 99, 235, 0.1);
+  --theme-border-strong: rgba(37, 99, 235, 0.35);
+  --theme-glow: rgba(37, 99, 235, 0.25);
   background: var(--bg);
   color: var(--fg);
 }

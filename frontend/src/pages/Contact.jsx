@@ -4,14 +4,14 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const LINKS = [
   {
     label: "Email",
-    value: "hello@akashverma.dev",
-    href: "mailto:hello@akashverma.dev",
+    value: "akashverma@gmail.com",
+    href: "mailto:akashverma@gmail.com",
     Icon: Mail,
   },
   {
     label: "Phone",
-    value: "+91 00000 00000",
-    href: "tel:+910000000000",
+    value: "+91 70546 38002",
+    href: "tel:+0546 38002",
     Icon: Phone,
   },
   {
