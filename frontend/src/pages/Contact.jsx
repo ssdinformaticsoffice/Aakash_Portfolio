@@ -4,14 +4,15 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const LINKS = [
   {
     label: "Email",
-    value: "hello@akashverma.dev",
-    href: "mailto:hello@akashverma.dev",
+    value: "ssdinformatics.dir@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=ssdinformatics.dir@gmail.com",
     Icon: Mail,
+    external: true,
   },
   {
     label: "Phone",
-    value: "+91 00000 00000",
-    href: "tel:+910000000000",
+    value: "+91 9196873591",
+    href: "tel:+9196873591",
     Icon: Phone,
   },
   {
@@ -23,14 +24,14 @@ const LINKS = [
   {
     label: "LinkedIn",
     value: "linkedin.com/in/akash-verma",
-    href: "https://www.linkedin.com/in/akash-verma",
+    href: "https://www.linkedin.com/in/akashverma7054",
     Icon: FaLinkedinIn,
     external: true,
   },
   {
     label: "GitHub",
     value: "github.com/akash-verma",
-    href: "https://github.com/akash-verma",
+    href: "https://github.com/akashverma7054",
     Icon: FaGithub,
     external: true,
   },
@@ -70,7 +71,12 @@ function Contact() {
           </a>
         ))}
 
-        <div className="glass-card relative flex flex-col items-center justify-center gap-3 overflow-hidden py-10 text-center sm:col-span-2 lg:col-span-3">
+        <a
+          href="https://wa.me/9196873591"
+          target="_blank"
+          rel="noreferrer"
+          className="glass-card card-hover relative flex flex-col items-center justify-center gap-3 overflow-hidden py-10 text-center sm:col-span-2 lg:col-span-3"
+        >
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(59,130,246,0.15),transparent_60%)]" />
           <MessageCircle size={26} className="relative text-[#3B82F6]" />
           <div className="relative">
@@ -79,7 +85,7 @@ function Contact() {
             </h2>
             <p className="mt-2 text-sm muted">Let's build something meaningful together.</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );

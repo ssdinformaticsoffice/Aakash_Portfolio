@@ -28,22 +28,22 @@ const rotatingHeadlines = [
 
 const EXPERIENCES = [
   {
-    year: "2023 – Present",
-    role: "CEO · SSD Informatics Pvt. Ltd.",
+    year: "2026 – Present",
+    role: "CTO at UG Pharmaceuticals Pvt. Ltd.",
     description:
-      "Leading product strategy, business growth and technology innovation.",
+      "Driving technology strategy, innovation, and business growth while aligning digital initiatives with long-term organizational goals.",
   },
   {
-    year: "2021 – 2023",
-    role: "Co-Founder & Business Strategist",
-    description:
-      "Worked on digital transformation initiatives, client solutions and scalable business models.",
+    year: "2022 – Present",
+    role: "CEO & Founding Director at SSD Informatics",
+   description:
+      "Leading business direction, technology initiatives, client solutions, and organizational growth with a long-term strategic perspective.",
   },
   {
-    year: "2018 – 2021",
-    role: "Technology & Operations",
-    description:
-      "Managed product development, system architecture and cross-functional collaboration.",
+    year: "2020 – Present",
+    role: "Proprietor · Atharv Infratech ",
+     description:
+      "Managing business operations, client relationships, strategic initiatives, and sustainable business development.",
   },
 ];
 
@@ -177,38 +177,6 @@ function Hero() {
       "
     >
 
-      {/* =====================================================
-          LASER / AMBIENT LINES
-      ===================================================== */}
-
-      <div className="pointer-events-none absolute inset-0 z-0 opacity-20">
-
-        <div
-          className="absolute left-[5%] top-[12%] h-px w-[40%]"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, var(--theme-accent), transparent)",
-          }}
-        />
-
-        <div
-          className="absolute right-[10%] top-[22%] h-px w-[30%]"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, var(--theme-accent), transparent)",
-          }}
-        />
-
-        <div
-          className="absolute bottom-[18%] left-[20%] h-px w-[50%]"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, var(--theme-accent), transparent)",
-          }}
-        />
-
-      </div>
-
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-8">
 
         {/* ===================================================
@@ -225,7 +193,7 @@ function Hero() {
             variants={staggerContainer(0.12, 0.1)}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-7"
+            className="order-2 lg:order-1 lg:col-span-7"
           >
 
             {/* STATUS */}
@@ -281,20 +249,6 @@ function Hero() {
               </div>
             </motion.div>
 
-            {/* TELEMETRY */}
-            <motion.div
-              variants={fadeUp}
-              className="
-                mb-6 select-none
-                text-xs font-black
-                uppercase tracking-[0.35em]
-              "
-              style={{
-                color: "var(--theme-accent)",
-              }}
-            >
-              VISIONARY LEADERSHIP • PURPOSEFUL GROWTH
-            </motion.div>
 
             {/* =================================================
                 MAIN TYPOGRAPHY
@@ -303,19 +257,28 @@ function Hero() {
             <motion.h1
               variants={fadeUp}
               className="
+                relative
                 mb-8 max-w-full
                 break-words
-                text-[clamp(2.7rem,10vw,5rem)]
+                text-[clamp(2.4rem,8vw,4.2rem)]
                 font-black italic
                 leading-[0.84]
                 tracking-tighter
                 select-none
-                sm:text-[clamp(3rem,8vw,5.2rem)]
-                lg:text-[clamp(3.5rem,5.5vw,5.4rem)]
+                sm:text-[clamp(2.7rem,7vw,4.5rem)]
+                lg:text-[clamp(3.1rem,4.8vw,4.7rem)]
               "
             >
 
-              <span className="stroke-text block">
+              <span
+                className="pointer-events-none absolute -top-5 left-0 h-px w-[55%] opacity-70"
+                style={{
+                  background:
+                    "linear-gradient(90deg, transparent, var(--theme-accent), transparent)",
+                }}
+              />
+
+              <span className="hero-name block">
                 AKASH VERMA
               </span>
 
@@ -323,7 +286,7 @@ function Hero() {
                 key={headlineIndex}
                 className="
                   block min-h-[1em]
-                  text-white
+                  hero-heading-fill
                 "
                 aria-live="polite"
               >
@@ -344,218 +307,51 @@ function Hero() {
             </motion.h1>
 
             {/* =================================================
-                INTRO INFORMATION
-            ================================================= */}
+    INTRO INFORMATION
+================================================= */}
 
             <motion.div
               variants={fadeUp}
               className="
-                mb-9 grid
-                grid-cols-1
-                items-start gap-8
-                md:grid-cols-2
-              "
+    mb-9
+    w-full
+  "
             >
-
               {/* DESCRIPTION */}
-
               <p
                 className="
-                  text-base font-medium
-                  leading-relaxed
-                  text-slate-400
-                  sm:text-lg
-                "
+      hero-description
+      w-full
+      max-w-3xl
+      text-base
+      font-medium
+      leading-relaxed
+      sm:text-lg
+      lg:max-w-4xl
+    "
               >
                 I am{" "}
 
                 <span
                   className="
-                    font-bold text-white
-                    underline underline-offset-4
-                  "
+        hero-emphasis
+        font-bold
+        underline
+        underline-offset-4
+      "
                   style={{
-                    textDecorationColor:
-                      "var(--theme-accent)",
+                    textDecorationColor: "var(--theme-accent)",
                   }}
                 >
                   Akash Verma
                 </span>
 
-                , CEO of SSD Informatics.
-                Building scalable web systems,
-                robust Python architectures,
-                and purposeful business direction.
+                , CEO of SSD Informatics. I bridge technology and business
+                to build scalable systems, strong teams, and meaningful
+                digital direction.
               </p>
-
-              {/* STATUS INFORMATION */}
-
-              <div
-                className="
-                  space-y-4
-                  border-l border-white/10
-                  py-1 pl-6
-                "
-              >
-
-                <div className="flex flex-col gap-1">
-
-                  <span className="
-                    text-[10px]
-                    font-bold
-                    uppercase
-                    tracking-widest
-                    text-slate-500
-                  ">
-                    Current Status
-                  </span>
-
-                  <span className="
-                    text-xs
-                    font-mono
-                    font-bold
-                    uppercase
-                    tracking-tight
-                    text-white
-                    sm:text-sm
-                  ">
-                    CEO @ SSD INFORMATICS
-                  </span>
-
-                </div>
-
-                <div className="flex flex-col gap-1">
-
-                  <span className="
-                    text-[10px]
-                    font-bold
-                    uppercase
-                    tracking-widest
-                    text-slate-500
-                  ">
-                    Specialization
-                  </span>
-
-                  <span className="
-                    text-xs
-                    font-mono
-                    font-bold
-                    uppercase
-                    tracking-tight
-                    text-white
-                    sm:text-sm
-                  ">
-                    SYSTEM ARCHITECTURE & PYTHON
-                  </span>
-
-                </div>
-
-              </div>
-
             </motion.div>
 
-            {/* =================================================
-                CTA
-            ================================================= */}
-
-            <motion.div
-              variants={fadeUp}
-              className="
-                flex flex-col
-                items-start gap-6
-                sm:flex-row
-                sm:items-center
-                sm:gap-10
-              "
-            >
-
-              <motion.div
-                whileHover={{
-                  scale: 1.05,
-                }}
-                whileTap={{
-                  scale: 0.95,
-                }}
-              >
-
-                <Link
-                  to="/projects"
-                  className="
-                    group relative
-                    inline-flex
-                    items-center
-                    justify-center
-                    overflow-hidden
-                    rounded-full
-                    px-8 py-4
-                    text-xs font-bold
-                    uppercase
-                    tracking-wider
-                    text-[#030712]
-                    shadow-2xl
-                  "
-                  style={{
-                    backgroundColor:
-                      "var(--theme-accent)",
-                    boxShadow:
-                      "0 0 35px var(--theme-glow)",
-                  }}
-                >
-
-                  <span className="
-                    relative z-10
-                    flex items-center gap-2
-                  ">
-                    Explore Works
-                    <ArrowUpRight size={16} />
-                  </span>
-
-                  <div
-                    className="
-                      absolute inset-0
-                      scale-150
-                      rounded-full
-                      bg-white/30
-                      opacity-0
-                      blur-md
-                      transition-opacity
-                      duration-300
-                      group-hover:opacity-100
-                    "
-                  />
-
-                </Link>
-
-              </motion.div>
-
-              <a
-                href="#about"
-                className="
-                  group flex
-                  cursor-pointer
-                  items-center gap-4
-                  text-xs font-bold
-                  uppercase tracking-widest
-                  text-slate-400
-                "
-              >
-
-                <span
-                  className="
-                    h-px w-12
-                    transition-all
-                    duration-500
-                    group-hover:w-20
-                  "
-                  style={{
-                    backgroundColor:
-                      "var(--theme-accent)",
-                  }}
-                />
-
-              </a>
-
-            </motion.div>
 
           </motion.div>
 
@@ -563,7 +359,7 @@ function Hero() {
               RIGHT IMAGE
           ================================================= */}
 
-          <div className="relative lg:col-span-5">
+          <div className="relative order-1 lg:order-2 lg:col-span-5">
 
             <div
               ref={cardRef}
@@ -615,9 +411,9 @@ function Hero() {
                 >
 
                   <img
-  src="/images/akash-verma.png"
-  alt="Akash Verma"
-  className="
+                    src="/images/akash-verma.png"
+                    alt="Akash Verma"
+                    className="
     absolute inset-0
     h-full w-full
     scale-105
@@ -628,7 +424,7 @@ function Hero() {
     group-hover:scale-100
     group-hover:grayscale
   "
-/>
+                  />
 
                   {/* GRADIENT */}
 
@@ -641,35 +437,6 @@ function Hero() {
                     to-transparent
                     opacity-80
                   " />
-
-                  {/* TOP IDENTIFICATION */}
-
-                  <div className="
-                    pointer-events-none
-                    absolute left-6 top-6
-                    flex flex-col gap-1
-                  ">
-
-                    <span className="
-                      text-[8px]
-                      font-bold
-                      uppercase
-                      tracking-[0.3em]
-                      text-white/40
-                    ">
-                      Identification
-                    </span>
-
-                    <span className="
-                      text-[12px]
-                      font-black
-                      tracking-tighter
-                      text-white
-                    ">
-                      VERMA_01.A
-                    </span>
-
-                  </div>
 
                   {/* BOTTOM STATUS */}
 
@@ -717,107 +484,6 @@ function Hero() {
 
               </motion.div>
 
-              {/* =================================================
-                  FLOATING HUD
-              ================================================= */}
-
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  x: -30,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                transition={{
-                  delay: 0.6,
-                  duration: 0.8,
-                }}
-                whileHover={{
-                  scale: 1.05,
-                }}
-                className="
-                  absolute
-                  bottom-6
-                  -left-6
-                  z-20
-                  hidden w-48
-                  rounded-2xl
-                  border border-white/10
-                  bg-[#050816]/90
-                  p-4
-                  shadow-2xl
-                  backdrop-blur-3xl
-                  sm:-left-10
-                  sm:block
-                "
-              >
-
-                <div className="
-                  flex flex-col gap-2.5
-                ">
-
-                  <div className="
-                    flex items-center
-                    justify-between
-                    text-[8px]
-                    font-bold
-                    uppercase
-                    text-slate-400
-                  ">
-                    <span>
-                      System Health
-                    </span>
-
-                    <span
-                      style={{
-                        color:
-                          "var(--theme-accent)",
-                      }}
-                    >
-                      99%
-                    </span>
-                  </div>
-
-                  <div className="
-                    h-1 w-full
-                    overflow-hidden
-                    rounded-full
-                    bg-white/10
-                  ">
-                    <div
-                      className="
-                        h-full
-                        rounded-full
-                      "
-                      style={{
-                        width: "99%",
-                        backgroundColor:
-                          "var(--theme-accent)",
-                        boxShadow:
-                          "0 0 8px var(--theme-accent)",
-                      }}
-                    />
-                  </div>
-
-                  <div className="
-                    text-[9px]
-                    font-mono
-                    leading-tight
-                    text-slate-300
-                  ">
-                    ARCH_X64_READY
-                    <br />
-                    CORE: ACTIVE
-                    <br />
-                    UI_RENDER: PASS
-                  </div>
-
-                </div>
-
-              </motion.div>
-
             </div>
 
           </div>
@@ -828,7 +494,7 @@ function Hero() {
             EXPERIENCE SECTION
         ===================================================== */}
 
-        <div className="mt-16 grid grid-cols-1 gap-3 lg:grid-cols-12">
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-16 lg:grid-cols-12">
 
           <div
             className="
@@ -880,88 +546,49 @@ function Hero() {
 
               </div>
 
-              <span className="
-                font-mono
-                text-xs
-                tracking-widest
-                text-soft
-              ">
-                Career
-              </span>
-
             </div>
 
             {/* EXPERIENCE LIST */}
 
-            <div className="space-y-4">
+            <div className="space-y-6 sm:space-y-8">
 
               {EXPERIENCES.map(
                 (experience) => (
                   <div
                     key={experience.year}
                     className="
-                      flex
-                      items-start
-                      gap-3
+                      timeline-item
+                      relative
+                      pl-6
+                      pb-4
+                      sm:pl-8
                     "
                   >
 
                     <span
                       className="
-                        accent-dot
-                        mt-2
-                        h-2 w-2
-                        shrink-0
+                        absolute
+                        -left-[5px]
+                        top-0
+                        h-[9px]
+                        w-[9px]
                         rounded-full
+                        bg-[#3B82F6]
+                        shadow-[0_0_8px_rgba(59,130,246,0.6)]
                       "
                     />
 
-                    <div className="
-                      min-w-0
-                      flex-1
-                    ">
+                    <span className="font-mono text-[11px] font-semibold uppercase tracking-widest muted sm:text-sm">
+                      {experience.year}
+                    </span>
 
-                      <div className="
-                        flex
-                        flex-wrap
-                        items-baseline
-                        gap-x-3
-                        gap-y-1
-                      ">
+                    <h4 className="mt-2 text-base font-medium sm:text-lg">
+                      {experience.role}
+                    </h4>
 
-                        <span className="
-                          font-mono
-                          text-[11px]
-                          font-semibold
-                          uppercase
-                          tracking-widest
-                          muted
-                        ">
-                          {experience.year}
-                        </span>
-
-                        <h4 className="
-                          text-sm
-                          font-medium
-                          sm:text-base
-                        ">
-                          {experience.role}
-                        </h4>
-
-                      </div>
-
-                      <p className="
-                        mt-1
-                        text-xs
-                        leading-5
-                        muted
-                        sm:text-sm
-                        sm:leading-6
-                      ">
-                        {experience.description}
-                      </p>
-
-                    </div>
+                    <p className="mt-1 text-xs leading-5 muted sm:text-sm sm:leading-6">
+                      {experience.description}
+                    </p>
 
                   </div>
                 )
@@ -977,166 +604,235 @@ function Hero() {
 
           <div
             className="
-              glass-card
-              flex min-h-[68px]
-              flex-col
-              items-center
-              justify-around
-              gap-3
-              px-4 py-3
-              sm:flex-row
-              lg:col-span-8
-            "
+    glass-card
+    flex
+    min-h-[68px]
+    flex-row
+    items-center
+    justify-between
+    gap-3
+    px-5 py-3
+    sm:px-4
+    lg:col-span-8
+  "
           >
-
             {/* REFINING */}
+            <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+              <span
+                className="
+        h-2 w-2
+        shrink-0
+        mt-6
+        animate-pulse
+        rounded-full
+        bg-red-500
+        shadow-[0_0_10px_rgba(239,68,68,0.6)]
+      "
+              />
 
-            <div className="
-              flex
-              items-center
-              gap-3
-            ">
-
-              <span className="
-                h-2 w-2
-                shrink-0
-                animate-pulse
-                rounded-full
-                bg-red-500
-                shadow-[0_0_10px_rgba(239,68,68,0.6)]
-              " />
-
-              <div>
-
-                <p className="
-                  text-[10px]
-                  font-semibold
-                  uppercase
-                  tracking-wider
-                  text-soft
-                ">
+              <div className="min-w-0">
+                <p
+                  className="
+          text-[9px]
+          font-semibold
+          uppercase
+          tracking-wider
+          text-soft
+          sm:text-[10px]
+        "
+                >
                   Refining Craft
                 </p>
 
-                <p className="
-                  text-sm
-                  font-medium
-                ">
+                <p
+                  className="
+          truncate
+          text-[11px]
+          font-medium
+          sm:text-sm
+        "
+                >
                   Technology · Leadership · Strategy
                 </p>
-
               </div>
-
             </div>
 
-            <div className="
-              hidden
-              h-6 w-px
-              hairline
-              sm:block
-            " />
+            {/* DIVIDER */}
+            <div
+              className="
+      h-8 w-px
+      shrink-0
+      hairline
+    "
+            />
 
             {/* OPEN TO */}
+            <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+              <span
+                className="
+        h-2 w-2
+        shrink-0
+        mt-6
+        animate-pulse
+        rounded-full
+        bg-green-500
+        shadow-[0_0_10px_rgba(34,197,94,0.6)]
+      "
+              />
 
-            <div className="
-              flex
-              items-center
-              gap-3
-            ">
-
-              <span className="
-                h-2 w-2
-                shrink-0
-                animate-pulse
-                rounded-full
-                bg-green-500
-                shadow-[0_0_10px_rgba(34,197,94,0.6)]
-              " />
-
-              <div>
-
-                <p className="
-                  text-[10px]
-                  font-semibold
-                  uppercase
-                  tracking-wider
-                  text-soft
-                ">
+              <div className="min-w-0">
+                <p
+                  className="
+          text-[9px]
+          font-semibold
+          uppercase
+          tracking-wider
+          text-soft
+          sm:text-[10px]
+        "
+                >
                   Open To
                 </p>
 
-                <p className="
-                  text-sm
-                  font-medium
-                ">
+                <p
+                  className="
+          truncate
+          text-[11px]
+          font-medium
+          sm:text-sm
+        "
+                >
                   Vision · Innovation · Growth
                 </p>
-
               </div>
-
             </div>
-
           </div>
 
           {/* ===================================================
-              CLOCK
-          =================================================== */}
+    CLOCK + COMMAND
+=================================================== */}
 
           <div
             className="
-              glass-card
-              flex min-h-[68px]
-              items-center
-              justify-center
-              px-3 py-2
-              lg:col-span-3
-            "
+    grid
+    grid-cols-[minmax(0,1fr)_68px]
+    gap-2
+    lg:contents
+  "
           >
 
-            <span className="
-              font-mono
-              text-2xl
-              font-light
-              tracking-[0.15em]
-              text-soft
-            ">
-              {time || "00:00:00"}
-            </span>
+            {/* ===================================================
+      CLOCK
+  =================================================== */}
+
+            <div
+              className="
+      glass-card
+      flex min-h-[68px]
+      items-center justify-center
+      rounded-xl
+      px-3 py-2
+      lg:col-span-3
+    "
+            >
+              <span
+                className="
+        font-mono
+        text-xl
+        font-light
+        tracking-[0.12em]
+        text-soft
+        sm:text-2xl
+        sm:tracking-[0.15em]
+      "
+              >
+                {time || "00:00:00"}
+              </span>
+            </div>
+
+
+            {/* ===================================================
+      COMMAND / ORBIT
+  =================================================== */}
+
+            <div
+              className="
+      glass-card
+      card-hover
+      flex min-h-[68px]
+      items-center justify-center
+      rounded-xl
+      lg:col-span-1
+    "
+            >
+              <div className="relative h-12 w-12">
+
+                {/* Soft outer glow */}
+                <div
+                  className="
+          absolute inset-0
+          animate-pulse
+          rounded-full
+          bg-white/5
+          blur-md
+        "
+                />
+
+                {/* Main orbit ring */}
+                <div
+                  className="
+          absolute inset-1
+          rounded-full
+          border border-white/10
+        "
+                />
+
+                {/* Inner subtle ring */}
+                <div
+                  className="
+          absolute inset-2
+          rounded-full
+          border border-white/[0.06]
+        "
+                />
+
+                {/* White glowing center */}
+                <div
+                  className="
+          absolute left-1/2 top-1/2
+          h-4 w-4
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-white/90
+          shadow-[0_0_18px_rgba(255,255,255,0.55)]
+        "
+                />
+
+                {/* Green orbit */}
+                <div
+                  className="
+          absolute inset-0
+          animate-[spin_4s_linear_infinite]
+        "
+                >
+                  <span
+                    className="
+            absolute
+            right-[2px]
+            top-[5px]
+            h-2 w-2
+            rounded-full
+            bg-green-500
+            shadow-[0_0_10px_rgba(34,197,94,0.9)]
+          "
+                  />
+                </div>
+
+              </div>
+            </div>
 
           </div>
-
-          {/* ===================================================
-              COMMAND
-          =================================================== */}
-
-          <Link
-            to="/contact"
-            className="
-              glass-card
-              card-hover
-              flex min-h-[68px]
-              items-center
-              justify-center
-              rounded-xl
-              lg:col-span-1
-            "
-            title="Contact"
-          >
-
-            <kbd className="
-              flex
-              items-center
-              gap-1.5
-              font-sans
-              text-sm
-              font-medium
-              text-soft
-            ">
-              <Command size={15} />
-              K
-            </kbd>
-
-          </Link>
 
         </div>
 
