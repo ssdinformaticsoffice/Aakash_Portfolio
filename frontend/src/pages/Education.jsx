@@ -24,9 +24,9 @@ const PARAGRAPHS = [
   "For me, leadership is not just about building a business — it is about creating direction, solving meaningful problems, and continuously moving forward.",
 ];
 
-const PASSION =
-  "I bring together technology, strategic thinking, and purposeful leadership to turn ideas into meaningful solutions. I’m passionate about exploring emerging technologies, driving innovation, and building collaborative environments where people, ideas, and businesses can grow together."
-function Education() {
+const PASSION ="Clear and purposeful communication across teams, clients, and business stakeholders.Building strong professional relationships through transparency, collaboration, and trust.Communicating vision and strategy in a way that inspires alignment and meaningful action."
+
+  function Education() {
   const [activeEducation, setActiveEducation] = useState(null);
 
   return (

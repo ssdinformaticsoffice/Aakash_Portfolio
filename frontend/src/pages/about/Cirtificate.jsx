@@ -6,12 +6,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 ========================================================= */
 
 const PARAGRAPHS = [
-    "I’m Akash Verma, CEO of SSD Informatics, with a strong interest in technology, innovation, and purposeful business growth. I believe great ideas become meaningful when they are supported by clear vision, strategic thinking, and consistent execution.",
+    "To build a technology-driven organization that creates meaningful solutions, empowers businesses, and contributes to a smarter digital future.",
 
-    "My focus is on building technology-driven solutions, encouraging innovation, and creating an environment where people and ideas can grow together. I approach leadership with curiosity, responsibility, and a long-term perspective.",
+"Our vision is to grow through innovation, trust, and continuous improvement while becoming a reliable technology partner for businesses and organizations.",
 
-    "For me, leadership is not just about building a business — it is about creating direction, solving meaningful problems, and continuously moving forward.",
-];
+"We aim to create long-term value by combining technology, people, and purposeful innovation.",
+
+"We strive to build a culture where creativity, collaboration, and excellence drive everything we do.",
+
+"By staying committed to our values, we seek to create lasting impact for our clients, our people, and the communities we serve."
+      ];
 
 
 /* =========================================================
@@ -319,7 +323,7 @@ function Cirtificate() {
     return (
         <>
             {/* =====================================================
-          ABOUT SECTION
+          vision SECTION
       ===================================================== */}
 
             <section
@@ -353,7 +357,7 @@ function Cirtificate() {
 
                     <div className="space-y-2 sm:space-y-2.5 lg:space-y-3">
 
-                        {/* ABOUT TITLE */}
+                        {/* company TITLE */}
 
                         <div
                             className="
@@ -375,7 +379,7 @@ function Cirtificate() {
                   md:text-4xl
                 "
                             >
-                                About Me
+                                Company Vision
                             </h2>
                         </div>
 
@@ -439,7 +443,8 @@ function Cirtificate() {
                     tracking-wide
                   "
                                 >
-                                    INDIA
+                                    SSD
+                                    INFORMATICS
                                 </h3>
 
                                 <p
@@ -450,7 +455,9 @@ function Cirtificate() {
                     muted
                   "
                                 >
-                                    20.5937° N, 78.9629° E
+
+
+                                    Technology · Innovation · Growth
                                 </p>
 
                                 <p
@@ -640,7 +647,7 @@ function Cirtificate() {
         font-light
         leading-[1]
         tracking-[-0.03em]
-        text-white
+        text-[var(--fg)]
         sm:text-5xl
         lg:text-[4.2rem]
       "
@@ -670,7 +677,7 @@ function Cirtificate() {
         max-w-[340px]
         text-sm
         leading-7
-        text-slate-400
+        text-[var(--mut)]
         sm:text-[15px]
       "
                                 >
@@ -695,7 +702,7 @@ function Cirtificate() {
           font-mono
           text-2xl
           font-light
-          text-white
+          text-[var(--fg)]
         "
                                     >
                                         04
@@ -708,7 +715,7 @@ function Cirtificate() {
             font-semibold
             uppercase
             tracking-[0.2em]
-            text-slate-500
+            text-[var(--mut-2)]
           "
                                         >
                                             Certificates
@@ -756,7 +763,7 @@ function Cirtificate() {
           text-[8px]
           uppercase
           tracking-[0.25em]
-          text-slate-600
+          text-[var(--mut-2)]
         "
                                     >
                                         Selected Recognition

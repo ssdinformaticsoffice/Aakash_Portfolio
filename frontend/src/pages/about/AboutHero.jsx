@@ -162,7 +162,7 @@ function AboutHero() {
                 font-light
                 leading-[1.05]
                 tracking-[-0.03em]
-                text-white
+                text-[var(--fg)]
                 sm:text-5xl
                 md:text-6xl
                 lg:text-[4.5rem]
@@ -184,11 +184,11 @@ function AboutHero() {
 
             <h2
               className="
-                mt-2
+                mt-1
                 text-2xl
                 font-light
                 tracking-tight
-                text-slate-300
+                text-[var(--fg-soft)]
                 sm:text-3xl
               "
             >
@@ -214,14 +214,16 @@ function AboutHero() {
                 className="
                   text-sm
                   leading-7
-                  text-slate-400
+                  text-[var(--mut)]
                   sm:text-[15px]
                 "
               >
-                Every role carries responsibility. For me,
-                leadership is about understanding where to go,
-                why it matters, and how people can move forward
-                together.
+                Leadership is more than a position; it is
+                the responsibility to create direction,
+                make meaningful decisions, and bring people
+                together around a shared purpose.
+
+
               </p>
 
               <p
@@ -229,13 +231,14 @@ function AboutHero() {
                   mt-3
                   text-sm
                   leading-7
-                  text-slate-500
+                  text-[var(--mut-2)]
                   sm:text-[15px]
                 "
               >
-                I value clarity in decisions, openness in
-                collaboration, and a long-term perspective
-                when building something meaningful.
+                I believe in leading with clarity,
+                embracing innovation, and taking a
+                long-term perspective to build organizations
+                that create lasting value.
               </p>
             </div>
 
@@ -260,7 +263,7 @@ function AboutHero() {
                     font-[cursive]
                     text-xl
                     italic
-                    text-white/80
+                    text-[var(--fg-soft)]
                   "
                 >
                   Akash Verma
@@ -273,10 +276,10 @@ function AboutHero() {
                     font-semibold
                     uppercase
                     tracking-[0.25em]
-                    text-slate-500
+                    text-[var(--mut-2)]
                   "
                 >
-                 Founding Director at SSD Informatics
+                  Founding Director at SSD Informatics
                 </div>
 
               </div>
@@ -396,18 +399,6 @@ function AboutHero() {
 
                 <p
                   className="
-                    text-[9px]
-                    font-semibold
-                    uppercase
-                    tracking-[0.25em]
-                    text-[var(--theme-accent)]
-                  "
-                >
-                  CEO
-                </p>
-
-                <p
-                  className="
                     mt-1
                     text-lg
                     font-medium
@@ -473,7 +464,7 @@ function AboutHero() {
                 font-semibold
                 uppercase
                 tracking-[0.25em]
-                text-slate-600
+                text-[var(--mut-2)]
               "
             >
               Core Perspective
@@ -493,8 +484,8 @@ function AboutHero() {
                     items-center
                     gap-3
                     border
-                    border-white/[0.06]
-                    bg-white/[0.015]
+                    border-[var(--card-border)]
+                    bg-[var(--card)]
                     px-3
                     py-3
                     transition-all
@@ -513,7 +504,8 @@ function AboutHero() {
                       top-1
                       text-[8px]
                       font-mono
-                      text-slate-700
+                      text-[var(--mut-2)]
+                      opacity-60
                     "
                   >
                     0{index + 1}
@@ -554,7 +546,7 @@ function AboutHero() {
                       className="
                         text-xs
                         font-semibold
-                        text-white
+                        text-[var(--fg)]
                       "
                     >
                       {item.title}
@@ -564,7 +556,7 @@ function AboutHero() {
                       className="
                         mt-0.5
                         text-[9px]
-                        text-slate-500
+                        text-[var(--mut-2)]
                       "
                     >
                       {item.text}
@@ -588,7 +580,7 @@ function AboutHero() {
                 items-center
                 justify-between
                 border-t
-                border-white/[0.06]
+                border-[var(--card-border)]
                 pt-4
               "
             >
@@ -600,7 +592,7 @@ function AboutHero() {
                     text-[8px]
                     uppercase
                     tracking-[0.2em]
-                    text-slate-600
+                    text-[var(--mut-2)]
                   "
                 >
                   Organization
@@ -611,7 +603,7 @@ function AboutHero() {
                     mt-1
                     text-xs
                     font-medium
-                    text-slate-300
+                    text-[var(--fg-soft)]
                   "
                 >
                   SSD Informatics Pvt. Ltd.

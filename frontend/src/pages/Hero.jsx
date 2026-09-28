@@ -31,19 +31,19 @@ const EXPERIENCES = [
     year: "2026 – Present",
     role: "CTO at UG Pharmaceuticals Pvt. Ltd.",
     description:
-      "Driving technology strategy, innovation, and business growth while aligning digital initiatives with long-term organizational goals.",
+      "Leading pharmaceutical growth through strategic vision, quality healthcare solutions, and sustainable business development."
   },
   {
     year: "2022 – Present",
     role: "CEO & Founding Director at SSD Informatics",
-   description:
+    description:
       "Leading business direction, technology initiatives, client solutions, and organizational growth with a long-term strategic perspective.",
   },
   {
     year: "2020 – Present",
     role: "Proprietor · Atharv Infratech ",
-     description:
-      "Managing business operations, client relationships, strategic initiatives, and sustainable business development.",
+    description:
+      "Providing strategic leadership across infrastructure projects, business operations, client partnerships, and long-term growth while driving quality and sustainable development.",
   },
 ];
 
