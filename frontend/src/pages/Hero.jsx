@@ -16,10 +16,10 @@ import {
 ========================================================= */
 
 const rotatingHeadlines = [
-  ["BUILDING", "WHAT'S", "NEXT"],
-  ["DESIGNING", "FOR", "IMPACT"],
-  ["ENGINEERING", "BOLD", "IDEAS"],
-  ["SCALING", "DIGITAL", "FUTURES"],
+  ["LEADING", "WITH", "VISION"],
+  ["BUILDING", "WHAT", "MATTERS"],
+  ["DRIVING", "MEANINGFUL", "GROWTH"],
+  ["SHAPING", "DIGITAL", "FUTURES"],
 ];
 
 /* =========================================================
@@ -30,20 +30,19 @@ const EXPERIENCES = [
   {
     year: "2026 – Present",
     role: "CTO at UG Pharmaceuticals Pvt. Ltd.",
-    description:
-      "Driving technology strategy, innovation, and business growth while aligning digital initiatives with long-term organizational goals.",
+    description: "Driving technology strategy and digital transformation, with a focus on scalable systems, operational efficiency, innovation, and technology solutions that support the organization’s long-term growth."
   },
   {
     year: "2022 – Present",
-    role: "CEO & Founding Director at SSD Informatics",
-   description:
-      "Leading business direction, technology initiatives, client solutions, and organizational growth with a long-term strategic perspective.",
+    role: "Founding Director & CEO of SSD Informatics Pvt. Ltd.",
+    description:
+      "Shaping the company’s vision and strategic direction while leading business growth, technology innovation, client solutions, and organizational development to build sustainable long-term value."
   },
   {
     year: "2020 – Present",
-    role: "Proprietor · Atharv Infratech ",
-     description:
-      "Managing business operations, client relationships, strategic initiatives, and sustainable business development.",
+    role: "Proprietor at Atharv Infratech",
+    description:
+      "Overseeing infrastructure projects, business operations, and client relationships while driving efficient project execution, quality delivery, and sustainable long-term growth."
   },
 ];
 
@@ -320,35 +319,31 @@ function Hero() {
               {/* DESCRIPTION */}
               <p
                 className="
-      hero-description
-      w-full
-      max-w-3xl
-      text-base
-      font-medium
-      leading-relaxed
-      sm:text-lg
-      lg:max-w-4xl
-    "
+    hero-description
+    w-full
+    max-w-3xl
+    text-base
+    font-medium
+    leading-relaxed
+    sm:text-lg
+    lg:max-w-4xl
+  "
               >
                 I am{" "}
 
                 <span
                   className="
-        hero-emphasis
-        font-bold
-        underline
-        underline-offset-4
-      "
+      hero-emphasis
+      font-bold
+    "
                   style={{
-                    textDecorationColor: "var(--theme-accent)",
+                    color: "#2563EB",
                   }}
                 >
                   Akash Verma
                 </span>
 
-                , CEO of SSD Informatics. I bridge technology and business
-                to build scalable systems, strong teams, and meaningful
-                digital direction.
+                ,  Founding Director & CEO of SSD Informatics. I bridge technology and business to build scalable systems, strong teams, and meaningful digital strategies.
               </p>
             </motion.div>
 

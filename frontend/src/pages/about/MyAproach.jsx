@@ -117,7 +117,7 @@ function MyAproach() {
               text-3xl
               font-light
               tracking-tight
-              text-white
+              text-[var(--fg)]
               sm:text-4xl
               md:text-5xl
             "
@@ -130,17 +130,16 @@ function MyAproach() {
 
           <p
             className="
-              mt-4
+              mt-2
               max-w-sm
               text-sm
               leading-6
-              text-slate-400
+              text-[var(--mut)]
               sm:text-[15px]
             "
           >
-            I believe meaningful progress comes from combining
-            clear thinking, collaboration, innovation, and a
-            long-term perspective.
+            I believe meaningful progress comes from clear thinking, collaboration, innovation, and a long-term perspective.
+             My approach is to turn ideas into purposeful action and create lasting value through thoughtful leadership.
           </p>
         </div>
 
@@ -170,8 +169,8 @@ function MyAproach() {
                   overflow-hidden
                   rounded-xl
                   border
-                  border-white/[0.07]
-                  bg-white/[0.015]
+                  border-[var(--card-border)]
+                  bg-[var(--card)]
                   p-4
                   transition-all
                   duration-300
@@ -190,7 +189,8 @@ function MyAproach() {
                     font-mono
                     text-[8px]
                     tracking-widest
-                    text-slate-700
+                    text-[var(--mut-2)]
+                    opacity-60
                   "
                 >
                   0{index + 1}
@@ -229,7 +229,7 @@ function MyAproach() {
                     mt-5
                     text-sm
                     font-semibold
-                    text-white
+                    text-[var(--fg)]
                   "
                 >
                   {item.title}
@@ -242,7 +242,7 @@ function MyAproach() {
                     mt-2
                     text-[10px]
                     leading-5
-                    text-slate-500
+                    text-[var(--mut-2)]
                   "
                 >
                   {item.description}
