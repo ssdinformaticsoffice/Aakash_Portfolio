@@ -110,13 +110,13 @@ function Contact() {
           Get in touch
         </p>
 
-        <h1 className="text-2xl font-light tracking-tight sm:text-3xl md:text-4xl">
+        <h1 className="text-3xl font-light tracking-tight sm:text-4xl md:text-5xl">
           Contact
         </h1>
 
         <p className="mt-3 max-w-xl text-sm muted sm:text-base">
-          Looking to collaborate, hire, or discuss an opportunity?
-          Feel free to reach out.
+          Whether you want to collaborate, hire, or discuss an
+          opportunity, feel free to reach out.
         </p>
       </div>
 
@@ -272,7 +272,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me a little about your idea..."
+                  placeholder="Tell me a little about your idea…"
                   rows={6}
                   required
                   className="field resize-none"
@@ -286,7 +286,7 @@ function Contact() {
                   disabled={loading}
                   className="group inline-flex items-center gap-2 rounded-xl bg-[var(--theme-accent)] px-6 py-3 text-sm font-medium text-white transition hover:bg-[var(--theme-accent-strong)] hover:shadow-lg hover:shadow-[var(--theme-glow)] disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading ? "Sending…" : "Send Message"}
 
                   <Send
                     size={16}
@@ -308,6 +308,20 @@ function Contact() {
         className="glass-card card-hover relative mt-3 flex flex-col items-center justify-center gap-3 overflow-hidden py-10 text-center"
       >
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,var(--theme-soft),transparent_60%)]" />
+
+ {/* 🔵 Blue Scanning Line */}
+  <div
+    className="
+      map-scan-line
+      pointer-events-none
+      absolute
+      bottom-0
+      top-0
+      w-px
+      bg-blue-400/70
+      shadow-[0_0_10px_#008cff]
+    "
+  />
 
         <MessageCircle
           size={26}

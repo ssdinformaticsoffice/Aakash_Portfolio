@@ -19,12 +19,12 @@ const educationData = [
 ];
 
 const PARAGRAPHS = [
-  "I’m Akash Verma, CEO of SSD Informatics, with a strong interest in technology, innovation, and purposeful business growth. I believe great ideas become meaningful when they are supported by clear vision, strategic thinking, and consistent execution.",
+  "I’m Akash Verma, Founding Director & CEO at SSD Informatics, with a strong interest in technology, innovation, and purposeful business growth. I believe great ideas become meaningful when they are supported by clear vision, strategic thinking, and consistent execution.",
   "My focus is on building technology-driven solutions, encouraging innovation, and creating an environment where people and ideas can grow together. I approach leadership with curiosity, responsibility, and a long-term perspective.",
   "For me, leadership is not just about building a business — it is about creating direction, solving meaningful problems, and continuously moving forward.",
 ];
 
-const PASSION ="Clear and purposeful communication across teams, clients, and business stakeholders.Building strong professional relationships through transparency, collaboration, and trust.Communicating vision and strategy in a way that inspires alignment and meaningful action."
+const PASSION = "Clear and purposeful communication across teams, clients, and business stakeholders. Building strong professional relationships through transparency, collaboration, and trust. Communicating vision and strategy in a way that inspires alignment and meaningful action.";
 
   function Education() {
   const [activeEducation, setActiveEducation] = useState(null);
@@ -43,7 +43,7 @@ const PASSION ="Clear and purposeful communication across teams, clients, and bu
               </h2>
             </div>
 
-            <div className="glass-card relative h-40 overflow-hidden sm:h-48 md:h-52 lg:h-48">
+            <div className="hidden sm:block glass-card relative h-40 overflow-hidden sm:h-48 md:h-52 lg:h-48">
               <div className="map-pattern absolute inset-0 opacity-60" />
               <div className="map-shade absolute inset-0 opacity-80" />
 

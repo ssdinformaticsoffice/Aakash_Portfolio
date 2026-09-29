@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Portfolio Backend is Running");
+  res.send("Portfolio backend is running.");
 });
 
 app.use("/api/contact", contactRoutes);
